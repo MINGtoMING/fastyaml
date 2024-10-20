@@ -1,0 +1,23 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "fastyaml"
+description = "A fast YAML parser"
+readme = "README.md"
+authors = [{ name = "MINGtoMING", email = "3575188313@qq.com" }]
+license = "MIT or Apache-2.0"
+license-files = { paths = ["LICENSE-MIT", "LICENSE-APACHE"] }
+requires-python = ">=3.10"
+keywords = ["yaml", "parser"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+
+[tool.maturin]
+python-source = "python"
+features = ["pyo3/extension-module"]
