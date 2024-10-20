@@ -1,6 +1,6 @@
 # Fast YAML
 
-A Fast YAML Parser for Python. 
+A fast YAML parser for Python. 
 
 ## Dependency
 - Python ≥ 3.10
@@ -14,7 +14,7 @@ cd fastyaml
 pip install maturin
 maturin develop --release
 ```
-### 2. install from PyPi
+### 2. install from PyPI
 ```shell
 pip install fastyaml
 ```
